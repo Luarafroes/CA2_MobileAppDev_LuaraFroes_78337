@@ -59,6 +59,10 @@ The application also uses Firebase Authentication for user authentication.
 
 ![Number Validation Test](screenshots/Testnumbers.png)
 
+**Word Validation Test**
+
+![Word Validation Test](screenshots/TestWordok.png)
+
 ## 4. Counter Testing – remember() vs rememberSaveable()
 
 The application demonstrates two different ways of managing UI state in Jetpack Compose.
@@ -77,7 +81,7 @@ The tests demonstrate:
 - Using `check()` to verify a condition.
 - Using `require()` to validate an argument.
 - Creating and throwing a custom exception.
-- Testing valid and invalid inputs.
+- Testing valid and invalid words.
 - Checking expected exceptions using JUnit.
 
 ## 6. Authentication and Validation
@@ -93,6 +97,4 @@ The validation examples cover:
 ## 7. Author
 
 **Luara Froes – 78337**
-
-BSc in Science in Computing & Multimedia  
 Dorset College
