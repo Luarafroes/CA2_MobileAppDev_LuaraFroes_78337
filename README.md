@@ -1,21 +1,35 @@
 # Android Mobile App Development – CA2
 
 **Student:** Luara Froes  
-**Student ID:** 78337
+**Student Number:** 78337
 
-## Project Overview
+## 1. Project Overview
 
-This project was developed as part of the Android Mobile App Development module. It demonstrates Android application development using Kotlin and Jetpack Compose, including input validation, error handling and custom exceptions.
+This project was developed as part of the Android Mobile App Development module. It demonstrates Android development using Kotlin and Jetpack Compose, including user input validation, error handling, exception handling, counters and state management.
 
-## Screenshots
+The application also uses Firebase Authentication for user authentication.
 
-### 1. Application Functionality
+## 2. Technologies Used
 
-**Counter Working**
+- Kotlin
+- Android Studio
+- Jetpack Compose
+- Firebase Authentication
+- JUnit
 
-![Counter Working](screenshots/Conterworking.png)
+## 3. Application Screenshots
 
-### 2. Input Validation
+### Counter Functionality
+
+**Counters Working**
+
+![Counters Working](screenshots/Countersworking.png)
+
+**Counters After Refresh**
+
+![Counters After Refresh](screenshots/Counterafterrefresh.png)
+
+### Input Validation
 
 **Invalid Email**
 
@@ -25,17 +39,17 @@ This project was developed as part of the Android Mobile App Development module.
 
 ![Password Too Short](screenshots/Passwordtooshort.png)
 
-### 3. Error Handling
+### Error Handling
 
 **Incorrect Password**
 
 ![Incorrect Password](screenshots/Errorwrongpassword.png)
 
-**Incorrect Password – Additional Test**
+**Additional Incorrect Password Test**
 
 ![Incorrect Password Additional Test](screenshots/Errorwrongpassword%20%282%29.png)
 
-### 4. Exception Testing
+### Exception Testing
 
 **Check Light Test**
 
@@ -45,25 +59,40 @@ This project was developed as part of the Android Mobile App Development module.
 
 ![Number Validation Test](screenshots/Testnumbers.png)
 
-## Technologies Used
+## 4. Counter Testing – remember() vs rememberSaveable()
 
-- Kotlin
-- Android Studio
-- Jetpack Compose
-- Firebase Authentication
-- JUnit
+The application demonstrates two different ways of managing UI state in Jetpack Compose.
 
-## Testing
+- **remember():** Keeps the counter value during recomposition but resets when the screen is recreated.
+- **rememberSaveable():** Preserves the counter value when the screen is recreated, such as after an activity refresh.
 
-The application includes tests for input validation and exception handling, including:
+The screenshots demonstrate the difference between these two methods.
 
-- Email validation.
-- Password length validation.
-- Incorrect password handling.
-- `check()` to validate program state.
-- `require()` to validate arguments.
-- Custom `WordTooLongException` for words exceeding 10 characters.
+## 5. Exception Handling and Testing
 
-## Author
+The project includes examples of exception handling using Kotlin.
+
+The tests demonstrate:
+
+- Using `check()` to verify a condition.
+- Using `require()` to validate an argument.
+- Creating and throwing a custom exception.
+- Testing valid and invalid inputs.
+- Checking expected exceptions using JUnit.
+
+## 6. Authentication and Validation
+
+The application includes Firebase Authentication and input validation.
+
+The validation examples cover:
+
+- Invalid email addresses.
+- Passwords that are too short.
+- Incorrect password errors.
+
+## 7. Author
 
 **Luara Froes – 78337**
+
+BSc in Science in Computing & Multimedia  
+Dorset College
